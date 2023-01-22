@@ -243,6 +243,9 @@ color: var(--primary-color);
     padding: .2rem;
     font-size: 0.75rem;
 }
+#main-footer .list li{
+    border: none;
+}
 
 #main-footer .footer-container input[type='email']{
     width: 90%;

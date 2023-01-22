@@ -19,6 +19,9 @@
 .text-li-sec{
     color: var(--li-secondary-color);
 }
+.text-fade{
+    color: var(--fade-color);
+}
 
 .card{
     background: var(--light-color);
@@ -132,7 +135,7 @@
 
 
 .list li{
-    padding: .5rem 0;
+    padding: .3rem 0;
     border-bottom: #555 dotted 1px;
     width: 90%; 
 }
