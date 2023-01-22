@@ -251,7 +251,6 @@ color: var(--primary-color);
 }
 #main-footer .footer-container input[type='submit']{
     width: 90%;
-    border-radius: 0;
 }
 
 
