@@ -52,13 +52,23 @@
     grid-template-columns: repeat(2, 1fr);
 }
 #services-article .articles-container > *:first-child,
-#services-article .articles-container > *:last-child{
+#services-article .articles-container > *:nth-child(7),
+#services-article .articles-container > *:nth-child(8){
     grid-template-columns:  1fr;
     grid-column: 1 ;
 }
 
+
+/* for about page */
+.page-container{
+    grid-template-columns: 1fr;
+}
+#about .page-container .card h1{
+    text-align: center;
+}
+
     @media (max-width: 600px){
-        #carousel .carousel .carousel-content h1{
+    #carousel .carousel .carousel-content h1{
             font-size: 3rem;
         }
     #services-article .articles-container{

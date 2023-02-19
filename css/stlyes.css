@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6{
 
 #carousel .carousel .carousel-content h1{
     font-size: 4.5rem;
-    line-height: 1.5rem;
+    line-height: 2.2rem;
     margin: .5rem 0 2rem;
 }
 
@@ -273,7 +273,9 @@ color: var(--primary-color);
     text-align: justify;
 }
 #services-article .articles-container > *:first-child,
-#services-article .articles-container > *:last-child{
+/* #services-article .articles-container > *:last-child, */
+#services-article .articles-container > *:nth-child(7),
+#services-article .articles-container > *:nth-child(8){
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -281,6 +283,8 @@ color: var(--primary-color);
     grid-column: 1 / span 2;
 }
 
-#services-article .articles-container > *:last-child{
+
+
+#services-article .articles-container > *:nth-child(7) {
     grid-column: 2 / span 2;
 }
