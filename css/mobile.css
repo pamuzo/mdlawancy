@@ -14,9 +14,9 @@
 }
 @media (max-width: 800px) {
   /* navigation */
-  #main-nav img {
+  /* #main-nav img {
     width: 60px;
-  }
+  } */
   .menu {
     display: none;
     flex-direction: column;
