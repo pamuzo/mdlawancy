@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 a {
   color: #333;
@@ -167,7 +167,7 @@ h6 {
 
 #category h2 {
   font-size: 36px;
-  color: var(--primary-color);
+  color: var(--li-primary-color);
 }
 #category p {
   font-size: 18px;
@@ -256,7 +256,7 @@ h6 {
 #features h2 {
   font-size: 2.3rem;
   padding-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--li-primary-color);
   text-align: center;
 }
 hr {
