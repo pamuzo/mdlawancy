@@ -132,6 +132,7 @@
   padding: 2rem;
   position: relative;
   margin: 0;
+  width: 100vw;
 }
 .container-fluid::before {
   content: "";

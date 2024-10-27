@@ -195,7 +195,46 @@ h6 {
     url(/images/articles/screenprinting.png);
   background-size: cover;
 }
-
+/*----------------- print Method Section (pm) */
+.print-method {
+  text-align: center;
+}
+.pm-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+}
+.pm-grid {
+  position: relative;
+}
+.pm-container .heat-transfer {
+  grid-column: 1/3;
+}
+.pm-container .screen-printing {
+  grid-column: 3/5;
+}
+.pm-container img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pm-grid .btn {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px 30px;
+  background-color: var(--light-color);
+  box-shadow: 13px 13px 7px 2px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease;
+}
+.pm-grid .btn:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
 /* showcase section  */
 
 .features {
@@ -274,14 +313,115 @@ hr {
 /* couple section */
 
 #couple.container-fluid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background: url("../images/couple.jpg") no-repeat center center/cover;
-  opacity: 0.8;
+  opacity: 0.6;
 }
-
+#couple .container-fluid .container {
+  z-index: 1;
+}
 #couple h2 {
   font-size: 7rem;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+/* ---------------------------------thrusted Brand ------------- */
+.thrusted-brand {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  padding: 20px;
+  margin-top: 100px;
+}
+.thrusted-brand img {
+  border: 1px solid #e4e4e4;
+}
+
+/*----------------------------------- inspiration section -----------*/
+.inspiration {
+  padding-top: 80px;
+}
+.inspiration h2:first-child {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.inspiration-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 250px 250px;
+}
+.inpiration-grid {
+  background-color: antiquewhite;
+  position: relative;
+}
+.inpiration-grid img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.inspiration-content {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.inspiration-content:hover {
+  opacity: 1;
+}
+.inspiration-content p:first-child {
+  font-style: italic;
+  margin-bottom: -8px;
+}
+.inspiration-footer {
+  background-color: #257180;
+  padding: 70px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  align-items: center;
+  font-size: 28px;
+}
+
+.inspiration-footer button {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #b8001f;
+  padding: 20px 80px 20px 30px;
+  margin: 0;
+  position: relative;
+}
+.inspiration-footer .click {
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  font-size: 32px;
+  animation: drive 0.6s linear infinite alternate both;
+}
+
+@keyframes drive {
+  from {
+    transform: translatex(0);
+  }
+  to {
+    transform: translatex(10px);
+  }
 }
 
 /* footer section */
